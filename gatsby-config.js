@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://discourse.studio",
     title: "discourse.studio",
   },
   plugins: [
@@ -40,4 +40,4 @@ module.exports = {
       __key: "pages",
     },
   ],
-};
+}
