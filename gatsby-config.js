@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://discourse.studio",
     title: "discourse.studio",
-    description: `A Design Studio. The Gossip About town.`,
+    description: `A Design Studio. The Subject of Local Gossip.`,
     author: `discourse.studio`,
   },
   plugins: [

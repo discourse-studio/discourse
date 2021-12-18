@@ -31,7 +31,7 @@ const IndexPage = () => {
     <Layout>
       <Seo
         title="Discourse"
-        metaDescription="A Design Studio. The Gossip About town."
+        metaDescription="A Design Studio. The Subject of Local Gossip."
       />
       <Content>
         <Mark />
