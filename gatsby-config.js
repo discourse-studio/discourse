@@ -2,6 +2,8 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://discourse.studio",
     title: "discourse.studio",
+    description: `A Design Studio. The Gossip About town.`,
+    author: `discourse.studio`,
   },
   plugins: [
     "gatsby-plugin-styled-components",

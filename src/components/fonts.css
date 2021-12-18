@@ -1,0 +1,19 @@
+/* Discourse Sans */
+@font-face {
+  font-family: "Discourse Sans Bold";
+  src:
+    url("../assets/fonts/DiscourseSans-Bold.woff2") format("woff2"),
+    url("../assets/fonts/DiscourseSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  font-family: "Discourse Sans Bold", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+}
