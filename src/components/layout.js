@@ -17,9 +17,9 @@ const MainLayout = styled.main`
   height: calc(var(--vh, 1vh) * 100);
 `
 
-const isBrowser = () => typeof window !== "undefined"
-
 const Layout = ({ children }) => {
+  const isBrowser = () => typeof window !== "undefined"
+
   React.useEffect(() => {
     onResize()
     window && window.addEventListener("resize", onResize)
