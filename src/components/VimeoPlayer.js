@@ -15,7 +15,9 @@ const Video = styled.iframe`
   width: 100vw;
   height: 56.25vw;
   min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
   min-width: 177.77vh;
+  min-width: calc(var(--vh, 1vh) * 177.77);
   position: absolute;
   top: 50%;
   left: 50%;

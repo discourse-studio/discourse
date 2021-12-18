@@ -10,7 +10,8 @@ import VimeoPlayer from "../components/VimeoPlayer"
 const Content = styled.div`
   display: flex;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   justify-content: space-between;
 `
 const EmailLink = styled.a`
@@ -27,6 +28,21 @@ const EmailLink = styled.a`
 `
 
 const IndexPage = () => {
+  let vh = window.innerHeight * 0.01
+  document.documentElement.style.setProperty("--vh", `${vh}px`)
+
+  React.useEffect(() => {
+    onResize()
+    window && window.addEventListener("resize", onResize)
+    return () => {
+      window && window.removeEventListener("resize", onResize)
+    }
+  }, [])
+  const onResize = (e) => {
+    let vh = window.innerHeight * 0.01
+    document.documentElement.style.setProperty("--vh", `${vh}px`)
+  }
+
   return (
     <Layout>
       <Seo
