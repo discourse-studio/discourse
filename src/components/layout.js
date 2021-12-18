@@ -17,10 +17,9 @@ const MainLayout = styled.main`
   height: calc(var(--vh, 1vh) * 100);
 `
 
-const Layout = ({ children }) => {
-  let vh = window.innerHeight * 0.01
-  document.documentElement.style.setProperty("--vh", `${vh}px`)
+const isBrowser = () => typeof window !== "undefined"
 
+const Layout = ({ children }) => {
   React.useEffect(() => {
     onResize()
     window && window.addEventListener("resize", onResize)
@@ -29,8 +28,10 @@ const Layout = ({ children }) => {
     }
   }, [])
   const onResize = (e) => {
-    let vh = window.innerHeight * 0.01
-    document.documentElement.style.setProperty("--vh", `${vh}px`)
+    if (isBrowser) {
+      let vh = window.innerHeight * 0.01
+      document.documentElement.style.setProperty("--vh", `${vh}px`)
+    }
   }
 
   return (
